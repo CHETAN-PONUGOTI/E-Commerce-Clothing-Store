@@ -1,4 +1,3 @@
-// frontend/src/pages/Checkout.jsx
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
@@ -61,7 +60,6 @@ const Checkout = () => {
             <h1 className="text-4xl font-bold text-gray-900 mb-8 text-center">Final Checkout</h1>
             
             <div className="flex flex-col lg:flex-row gap-8">
-                {/* Shipping Info Box */}
                 <div className="lg:w-3/5 p-6 bg-white rounded-xl shadow-lg">
                     <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b pb-2">Shipping Details</h2>
                     <div className="space-y-3 text-lg text-gray-700">
@@ -72,7 +70,6 @@ const Checkout = () => {
                     <p className="mt-6 text-sm text-blue-600">*Mock checkout: Using static address. This would typically be a dynamic form.</p>
                 </div>
 
-                {/* Order Summary Box */}
                 <div className="lg:w-2/5 p-6 bg-gray-50 rounded-xl shadow-lg border-2 border-indigo-100">
                     <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b pb-2">Order Summary</h2>
                     

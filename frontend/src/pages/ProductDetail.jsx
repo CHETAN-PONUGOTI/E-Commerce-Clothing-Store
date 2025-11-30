@@ -1,4 +1,3 @@
-// frontend/src/pages/ProductDetail.jsx
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import api from '../services/api';
@@ -52,7 +51,6 @@ const ProductDetail = () => {
 
     return (
         <div className="flex flex-col md:flex-row gap-10 p-6 bg-white rounded-xl shadow-lg">
-            {/* Image */}
             <div className="md:w-1/2">
                 <img 
                     src={product.image} 
@@ -61,7 +59,6 @@ const ProductDetail = () => {
                 />
             </div>
             
-            {/* Details and Controls */}
             <div className="md:w-1/2">
                 <h1 className="text-4xl font-extrabold text-gray-900 mb-3">{product.name}</h1>
                 <p className="text-3xl font-bold text-indigo-600 mb-4">${product.price.toFixed(2)}</p>
@@ -72,7 +69,6 @@ const ProductDetail = () => {
                     Stock: {product.stock > 0 ? `In Stock (${product.stock})` : 'Out of Stock'}
                 </p>
 
-                {/* Size Selector */}
                 <div className="flex items-center space-x-4 mb-4">
                     <label htmlFor="size-select" className="text-lg font-medium text-gray-700">Size:</label>
                     <select 
@@ -86,7 +82,6 @@ const ProductDetail = () => {
                     </select>
                 </div>
                 
-                {/* Quantity Selector */}
                 <div className="flex items-center space-x-4 mb-8">
                     <label htmlFor="qty-input" className="text-lg font-medium text-gray-700">Quantity:</label>
                     <input 
