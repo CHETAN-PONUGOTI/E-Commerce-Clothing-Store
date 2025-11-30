@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(cors({
-    origin: 'https://e-commerce-clothing-store-1.onrender.com',
+    origin: 'https://e-commerce-clothing-store-beta.vercel.app',
     credentials: true,
 }));
 
